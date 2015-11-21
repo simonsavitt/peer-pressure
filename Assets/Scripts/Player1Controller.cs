@@ -7,7 +7,8 @@ public class Player1Controller : MonoBehaviour {
 	public int beta = 5;
 
 	public float speed = 5;
-	public float attackSpeed = 1;
+	public float attackFrequency = 1;
+	private float nextAttack;
 
 	/* ATTRIBUTES
 	 * 
@@ -51,6 +52,6 @@ public class Player1Controller : MonoBehaviour {
 		Transform player2Transform = player2.transform;
 		transform.position = Vector2.MoveTowards (transform.position, player2Transform.position, speed * Time.deltaTime);
 
-//		float nextAttack = Time + 
+		float nextAttack = Time.time + attackFrequency;
 	}
 }
