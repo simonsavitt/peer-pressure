@@ -17,6 +17,6 @@ public class Player2Controller : MonoBehaviour {
 	void Update () {
 		GameObject player1 = GameObject.FindGameObjectWithTag ("Player1");
 		Transform player1Transform = player1.transform;
-		transform.position = Vector2.MoveTowards (transform.position, player1Transform.position, speed * Time.deltaTime);
+//		transform.position = Vector2.MoveTowards (transform.position, player1Transform.position, speed * Time.deltaTime);
 	}
 }
