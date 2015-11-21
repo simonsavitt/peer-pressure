@@ -52,6 +52,6 @@ public class Player1Controller : MonoBehaviour {
 		Transform player2Transform = player2.transform;
 		transform.position = Vector2.MoveTowards (transform.position, player2Transform.position, speed * Time.deltaTime);
 
-		float nextAttack = Time.time + attackFrequency;
+		float nextAttack = Time.time + attackFrequency; sadhasiudhaisuhdiuh
 	}
 }
